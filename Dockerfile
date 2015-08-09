@@ -1,5 +1,5 @@
 FROM node:latest
-
+#test
 RUN npm install -g mocha
 COPY package.json /src/package.json
 WORKDIR /src

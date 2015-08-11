@@ -5,7 +5,7 @@
  var git = require('gift');
 
 //
-describe.only('check Runner ', function(){
+describe.skip('check Runner ', function(){
   beforeEach(function(done){
 
     this.timeout(20000);
@@ -25,7 +25,7 @@ describe.only('check Runner ', function(){
 
   });
 
-  it.only('Runner live chat repo', function(done){
+  it('Runner live chat repo', function(done){
     this.timeout(20000);
     var Runner = require('./');
     var path = require('path');
@@ -167,7 +167,7 @@ beforeEach(function(done){
  });
 });
 
-it('using git clone [node]' , function(done){
+it.skip('using git clone [node]' , function(done){
      console.log('git clone use case');
 
      var repoUrl = "https://github.com/codefresh-io/codefresh-io.git";
@@ -192,7 +192,7 @@ it('using git clone [node]' , function(done){
      });
  });
 
- it('test package json', function(done){
+ it.skip('test package json', function(done){
    console.log('git clone use case');
 
    var repoUrl = "https://github.com/codefresh-io/codefresh-io.git";
@@ -243,7 +243,7 @@ it('using git clone [node]' , function(done){
           done(err);});
       });
   });
-  it.only('using git clone multiple docker files' , function(done){
+  it.skip('using git clone multiple docker files' , function(done){
        console.log('git clone use case');
 
        var repoUrl = "https://github.com/zwij/wap_zaverecna.git";

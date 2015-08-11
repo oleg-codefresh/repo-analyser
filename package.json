@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha ./gitClone/index.spec.js",
+    "test": "mocha ./test/sanity.spec.js",
     "start": "node ./bin/www"
   },
   "dependencies": {
